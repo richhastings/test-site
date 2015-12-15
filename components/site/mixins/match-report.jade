@@ -1,0 +1,67 @@
+mixin match-report(team, venue, score)
+
+	.match-report
+
+		.grid
+			.grid__item.desktop-two-thirds
+
+				.match-report__score
+					
+					- var scoreClass = 'grid grid--middle'
+
+					if venue === 'away'
+						- var scoreClass = 'grid grid--middle grid--reverse'
+
+					div(class=scoreClass)
+						.grid__item.three-sevenths
+
+							.grid
+								.grid__item.is-hidden-mobile
+									.kit
+										img(src="/assets/img/content/crystal-palace.gif")
+								.grid__item
+									p.match-report__team-name West Bromwich Albion
+
+						.grid__item.one-seventh
+							p #{score}
+
+						.grid__item.three-sevenths
+
+							.grid
+								.grid__item.is-hidden-mobile
+									.kit
+										img(src="/assets/img/content/crystal-palace.gif")
+
+								.grid__item
+									p #{team}
+
+				.lineups
+					.grid
+						.grid__item.one-half
+							.lineups__lineup
+								p Federici, Smith #[span.icon--ball-s], Francis, Distin, Daniels, Ritchie, Surman, Gosling, Stanislas, Arter, King
+								p Subs: Jedinak, Lee, Bamford, Speroni, Kelly, Ledley, Chamakh
+
+						.grid__item.one-half
+							.lineups__lineup
+								p Elliot, Janmaat, Mbemba, Coloccini, Dummett, Sissoko, Tiote, Anita, Wijnaldum, Mitrovic, Perez
+								p Subs: Perez, Gouffran, Thauvin, Sterry, Mbabu, Mitrovic, Darlow
+			
+			.grid__item.desktop-one-third
+				.grid
+					.grid__item.tablet-one-half.desktop-one-whole
+
+						//- ul.no-style
+						p #[strong Date:] Sunday 6th December 2015, 4pm. #[strong SKY]
+						p #[strong Venue:] St. James' Park
+						p #[strong Conditions:] miraculous
+						p #[strong Attendance:] 51,273 - the highest at SJP this season to date and the biggest turnout since the 52,094 who witnessed our season-closing 2-0 win over West Ham last May.
+			
+					.grid__item.tablet-one-half.desktop-one-whole
+						p #[strong Referee:] Andre Marriner - a second visit to Tyneside this season following the 0-1 loss to Arsenal, when he booked Moussa Sissoko in the opening exchanges, before dismissing Aleksandar Mitrovic.
+						p Thankfully we were in rather more restrained mood today, although the yellow card shown to Jack Colback looked slightly harsh when other comparable offences went unpunished - presumably the Newcastle midfielder now seems to have a similar reputation to club colleague Cheick Tiote. 
+
+			.grid__item
+				.prose
+					h1 Waffle
+					p (pulled in from CMS) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus totam consectetur velit ex sapiente asperiores repellat nisi a error earum dolor qui dolorem cum, enim fugiat consequatur eos expedita dolorum mollitia iste incidunt, accusamus beatae! Obcaecati numquam perferendis a dicta nam, dolores beatae quasi. Aperiam, officia non! Quas accusantium reprehenderit a consequatur nobis? Qui praesentium sint pariatur sed autem at velit excepturi id temporibus consectetur officiis delectus enim consequuntur laboriosam, quisquam ducimus voluptate in? Assumenda provident, enim itaque id ipsum earum! A aut facilis, iusto nulla quas sequi, ad similique quidem eveniet odio, non fugiat officia voluptatibus perferendis mollitia libero!

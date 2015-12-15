@@ -1,0 +1,38 @@
+mixin fixtures-row(type, date, team, venue, score, attendance)
+
+	- var cellclass = 'fixtures__cell--' + type
+	- var rowclass = 'fixtures__row--' + type
+
+	div(class=rowclass)
+	
+		.grid.grid--gutterless
+
+			//-  1st column (button and date)
+			.grid__item.one-quarter.tablet-one-fifth
+
+				.grid.grid--gutterless
+
+					//- open button
+					.grid__item.one-quarter
+						.open
+							if type !== 'header'
+								img(src="http://placehold.it/20x20")
+
+					//- date
+					.grid__item.three-quarters
+						div(class=cellclass)= date
+
+			.grid__item.one-quarter.tablet-one-fifth
+				div(class=cellclass)= team
+
+			.grid__item.one-quarter.tablet-one-fifth
+				div(class=cellclass)= venue
+
+			.grid__item.one-quarter.tablet-one-fifth
+				div(class=cellclass)= score
+
+			.grid__item.one-fifth.is-hidden-mobile
+				div(class=cellclass)= attendance
+
+			if type !== 'header'
+				+match-report(team, venue, score)

@@ -1,0 +1,60 @@
+//
+// EXAMPLE COMPONENT
+// =================
+// Optional description outlining what this component does, or highlighting
+// and complex / abnormal functionality.
+//
+// Comments below are used as examples, but illustrate how a file could be split.
+//
+
+//
+// BASE STYLES
+// Optional description
+//
+
+.fixture-box
+	border 1px $color--darkblue solid
+	margin-bottom $grid--gutter
+	font-family $font--arial
+	text-align center
+		
+.fixture-box__heading
+	background $color--darkblue
+	color #fff
+	margin-bottom 0
+	text-transform uppercase
+	border-bottom 1px solid $color--darkblue
+
+.fixture-box__kit
+	text-align center
+	padding 10px
+	
+	img
+		width 100%
+		max-width rem(80)
+		
+		+width-min($mq--desktop)
+			max-width rem(200)
+
+.fixture-box__details
+	padding rem(10)
+	font-size rem(14)
+	
+	p
+		margin-bottom 0
+		padding 0
+
+.fixture-box__team
+	font-weight bold
+	font-size rem(18)
+
+//
+// STATE MODIFIERS
+// Optional description
+//
+
+
+//
+// SIZE MODIFIERS
+// Optional description
+//

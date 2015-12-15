@@ -38,3 +38,4 @@ serviceLocator.register('logger', require('./logger'))
 
 // Bootstrap all the of the components
 require('./bootstrap')(serviceLocator)
+require('./fixtures')(serviceLocator)

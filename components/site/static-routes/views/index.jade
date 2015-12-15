@@ -2,5 +2,107 @@ extend /default
 
 block content
 
-  p Welcome to the #{config.meta.title} homepage.
-  p There's nothing much to see yet. Why not check out the #[a(href='/style-guide') Style Guide].
+	//-fixture boxes
+	.grid
+		.grid__item.tablet-one-half
+			.fixture-box
+				h3.fixture-box__heading next match
+
+				.grid.grid--middle.grid--gutterless
+					.grid__item.is-hidden-mobile.desktop-two-sixths
+						.kit
+							img(src="/assets/img/content/crystal-palace.gif")
+
+					.grid__item.desktop-four-sixths
+
+						.grid.grid--middle.grid--gutterless
+							.grid__item.one-half
+								.fixture-box__details
+									.fixture-box__team
+										p Crystal Palace (a)
+
+							.grid__item.one-half
+								.fixture-box__details
+									p Premier League
+									p Selhurst Park
+									p Friday 10th July
+									p Kick-off 8.00pm
+
+		.grid__item.tablet-one-half
+			.fixture-box
+				h3.fixture-box__heading previous match
+
+				.grid.grid--middle.grid--gutterless
+					.grid__item.is-hidden-mobile.desktop-two-sixths
+						.kit
+							img(src="/assets/img/content/crystal-palace.gif")
+
+					.grid__item.desktop-four-sixths
+
+						.grid.grid--middle
+							.grid__item.three-quarters
+								.fixture-box__details
+									.grid
+										.grid__item.two-thirds
+											p Newcastle United
+										.grid__item.one-third
+											p 2
+										.grid__item.two-thirds
+											p West Ham United
+										.grid__item.one-third
+											p 0
+
+							.grid__item.one-quarter
+								.fixture-box__details
+									p Premier League
+									p Selhurst Park
+									p Friday 10th July
+									p Match report
+
+	
+	//- content
+	.grid
+
+		.grid__item.tablet-two-thirds.desktop-one-half
+			.story
+				.prose
+					h1.pre-heading Premier League:
+					h1 Tommy Knox RIP
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores aliquid repellendus temporibus perferendis earum cum natus tempore atque. Sunt recusandae dignissimos dolorum animi eligendi quisquam, reiciendis qui ullam at. Dolore, vel iste sequi? At aut ad, tempore. Adipisci obcaecati nostrum labore id possimus debitis ipsam quasi ea porro similique deserunt ut rerum dolor fugiat saepe, minima tempore enim voluptatum explicabo dignissimos error optio nisi sint. Possimus, laborum, voluptas. Tenetur sunt minima eaque iste suscipit error in! Nesciunt minima laborum sunt, nihil neque explicabo mollitia ut quidem culpa voluptas illum non voluptatum aut repellendus illo saepe, perspiciatis modi consectetur nostrum.
+
+			.advert.advert--centered
+				img(src="http://placehold.it/500x100")
+
+			.story
+				.prose
+					h1.pre-heading Premier League:
+					h1 Spurs (a)
+					p A second successive visit to the Capital sees Steve McClaren's side heading to White Hart Lane for a 4pm kickoff on Sunday, once again live on Sky TV.
+
+					p The Cockerels are unbeaten in their last fourteen Premier League outings, since a 0-1 loss away to Manchester United on the first day of the season.
+
+					p As usual, main line train services departing from London Kings Cross after the game are designated as dry, with no alcohol sold or permitted to be taken on board.
+
+		.grid__item.tablet-one-third.desktop-one-quarter
+			.story
+				.prose
+					h2 Goalie giveaway
+					p Available now is the autobiography of popular former Magpies goalkeeper Pavel Srnicek, who recalls his life and times at SJP serving Jim Smith, Ossie Ardiles and Kevin Keegan plus his return under Glenn Roeder.
+					p We have two signed copies of "Pavel...." up for grabs and to be in with a chance of winning one, just email comps@nufc.com with your answer to the following picture question (subject: Pav):
+			.story
+				.prose
+					h2 SUB HEADING
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatem, iusto fugiat odit omnis! Blanditiis aliquam, ratione et id ipsam tempora repudiandae ipsum omnis excepturi praesentium quas assumenda doloribus sapiente!
+
+			//- çp Sub content
+		.grid__item.desktop-one-quarter
+
+			.grid
+				.grid__item.one-half.tablet-one-quarter.desktop-one-whole
+					img.advert(src="http://placehold.it/300x300")
+				.grid__item.one-half.tablet-one-quarter.desktop-one-whole
+					img.advert(src="http://placehold.it/300x300")
+				.grid__item.one-half.tablet-one-quarter.desktop-one-whole
+					img.advert(src="http://placehold.it/300x300")
+				.grid__item.one-half.tablet-one-quarter.desktop-one-whole
+					img.advert(src="http://placehold.it/300x300")

@@ -1,0 +1,25 @@
+extend /default
+include ../../mixins/fixtures-row
+include ../../mixins/match-report
+
+block content
+
+	.prose
+		h1 Fixtures and results
+
+	.fixtures
+		.grid.grid--gutterless
+			.grid__item
+
+				+fixtures-row('header', 'Date', 'Team', 'Venue', 'Score', 'Attendance')
+
+
+				//- each val in config.fixtures.fixture.length
+				//- 	+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
+				+fixtures-row('match', '01 Aug', 'Arsenal', 'home', '0-1', '50,000')
